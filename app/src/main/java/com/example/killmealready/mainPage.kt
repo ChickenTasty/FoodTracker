@@ -36,3 +36,11 @@ fun mainPage(){
 
     }
 }
+
+
+
+@Preview(showSystemUi = true)
+@Composable
+fun mainprev(){
+    mainPage()}
+
