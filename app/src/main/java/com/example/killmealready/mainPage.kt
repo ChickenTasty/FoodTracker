@@ -64,22 +64,25 @@ fun mainPage(){
                     fontSize = 20.sp,
                     modifier = Modifier.padding(8.dp)
                 )
-
+            }
             Text(
             text = "Add Meal",
             fontWeight = FontWeight.Bold,
             fontSize = 20.sp,
             modifier = Modifier.padding(bottom = 8.dp)
             )
-            }
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(60.dp)
+                    .background(Color.gray),
+            )
         }
-
-
-    }
-    fun Home(){
-
     }
 }
+
 
 
 
