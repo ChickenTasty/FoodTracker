@@ -115,8 +115,6 @@ fun Text(text: String, fontWeight: FontWeight, fontSize: Dp, color: Color) {
     TODO("Not yet implemented")
 }
 
-}
-
 
 @Preview(showSystemUi = true)
 @Composable
