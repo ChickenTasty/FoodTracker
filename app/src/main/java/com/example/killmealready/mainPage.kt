@@ -7,6 +7,8 @@ import androidx.compose.ui.Modifier
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -29,6 +31,7 @@ import androidx.compose.ui.text.font.FontWeight
 
 
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.Dp
 import com.example.killmealready.ui.theme.KillMeAlreadyTheme
 @Preview
 @Composable
@@ -50,40 +53,69 @@ fun mainPage(){
                     text = "Progress",
                     fontWeight = FontWeight.Bold,
                     fontSize = 20.sp,
-                    modifier = Modifier.padding(8.dp)
+                    modifier = Modifier.padding(2.dp)
                 )
                 Text(
                     text = "Home",
                     fontWeight = FontWeight.Bold,
                     fontSize = 20.sp,
-                    modifier = Modifier.padding(8.dp)
+                    modifier = Modifier.padding(2.dp)
                 )
                 Text(
                     text = "Archive",
                     fontWeight = FontWeight.Bold,
                     fontSize = 20.sp,
-                    modifier = Modifier.padding(8.dp)
+                    modifier = Modifier.padding(2.dp)
                 )
             }
+
+            Box(
+                modifier = Modifier
+                    .border(
+                        1.dp,
+                        Color.Black,
+                        shape = MaterialTheme.shapes.medium)
+            )
             Text(
             text = "Add Meal",
             fontWeight = FontWeight.Bold,
             fontSize = 20.sp,
             modifier = Modifier.padding(bottom = 8.dp)
             )
+
             Spacer(modifier = Modifier.height(16.dp))
 
             Box(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .height(60.dp)
-                    .background(Color.gray),
+                    .border(
+                        1.dp,
+                        Color.Black,
+                        shape = MaterialTheme.shapes.medium
+                    )
+                    .padding(8.dp)
             )
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(640.dp)
+                    .background(Color.Gray)
+            ){
+                Text(
+                    text = "Past meals",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 30.dp,
+                    color = Color.White
+                )
+            }
         }
     }
 }
 
+fun Text(text: String, fontWeight: FontWeight, fontSize: Dp, color: Color) {
+    TODO("Not yet implemented")
+}
 
+}
 
 
 @Preview(showSystemUi = true)
