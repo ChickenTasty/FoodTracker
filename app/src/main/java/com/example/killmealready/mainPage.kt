@@ -103,7 +103,7 @@ fun mainPage(){
                 Text(
                     text = "Past meals",
                     fontWeight = FontWeight.Bold,
-                    fontSize = 30.dp,
+                    fontSize = 30.sp,
                     color = Color.White
                 )
             }
@@ -111,9 +111,7 @@ fun mainPage(){
     }
 }
 
-fun Text(text: String, fontWeight: FontWeight, fontSize: Dp, color: Color) {
-    TODO("Not yet implemented")
-}
+
 
 
 @Preview(showSystemUi = true)
